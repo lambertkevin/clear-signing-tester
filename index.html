@@ -1,0 +1,17 @@
+<!doctype html>
+<html data-theme="acid" class="bg-slate-300">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear Signing Tester</title>
+    <script type="module">
+      import { Buffer } from "buffer";
+      window.Buffer = Buffer;
+    </script>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen w-screen flex py-4 md:py-10">
+    <div id="root" class="flex flex-grow w-full"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

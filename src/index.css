@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: InterVariable, system-ui, sans-serif;
+}
+
+.input {
+  @apply focus:outline-none active:outline-none focus-within:outline-none;
+}
