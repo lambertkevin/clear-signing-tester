@@ -98,20 +98,14 @@ const EIP712Signer = ({
                 >
                   USDC Permit on mainnet
                 </button>
-                <div
-                  className="tooltip hover:cursor-pointer"
-                  data-tip="(Not working needs to be fixed)"
+                <button
+                  className="btn btn-secondary"
+                  onClick={() => {
+                    setTypedMessage(JSON.stringify(UniswapX, null, 2));
+                  }}
                 >
-                  <button
-                    className="btn btn-secondary"
-                    onClick={() => {
-                      setTypedMessage(JSON.stringify(UniswapX, null, 2));
-                    }}
-                    disabled={true}
-                  >
-                    Uniswap X on mainnet
-                  </button>
-                </div>
+                  Uniswap X on mainnet
+                </button>
               </>
             )}
             {chainId === "0x89" && (
